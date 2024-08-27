@@ -1,0 +1,86 @@
+:root {
+  --white: #ffffff;
+  --blue: #068ED0;
+  --black: #000000;
+  --gray-100: #7f7f7f;
+  --gray-600: #2d2f31;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  background: var(--blue);
+  color: var(--white);
+  height: 8rem;
+}
+
+header h1 {
+  margin: 3.25rem 0 0 1rem;
+  font-size: 1.25rem;
+}
+
+header img {
+  height: 8rem;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--black);
+  -webkit-font-smoothing: antialiased; 
+}
+
+body, input, button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.formCadastro {
+  background: var(--white);
+  color: var(--gray-600);
+  padding: 2rem;
+  border-bottom: solid 2px var(--gray-100);
+}
+
+.dadosCadastro label {
+  color: var(--gray-600);
+  font-size: .875rem;
+  font-weight:bolder;
+}
+
+.dadosCadastro input {  
+  width: 100%;
+  padding: 5px 0;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+}
+
+.dadosCadastro input:focus {
+  border-bottom-color: var(--blue);
+}
+
+.dadosCadastro:focus-within label {
+  color: var(--blue);
+}
+
+footer img {
+  margin-top: .500rem;
+  height: 1.5rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: var(--blue); 
+  color: var(--white);
+  display: flex;
+  height: 5rem;
+  justify-content: center;
+}
