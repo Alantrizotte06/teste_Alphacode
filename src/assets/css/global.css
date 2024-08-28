@@ -47,6 +47,12 @@ body, input, button {
   border-bottom: solid 2px var(--gray-100);
 }
 
+.dadosCadastro {
+  display: inline-grid;
+  width: 49rem;
+  padding: 2rem 5rem 2rem 15rem;
+}
+
 .dadosCadastro label {
   color: var(--gray-600);
   font-size: .875rem;
@@ -54,7 +60,6 @@ body, input, button {
 }
 
 .dadosCadastro input {  
-  width: 100%;
   padding: 5px 0;
   border: none;
   border-bottom: 2px solid #ccc;
@@ -67,6 +72,10 @@ body, input, button {
 
 .dadosCadastro:focus-within label {
   color: var(--blue);
+}
+
+.columnInfo {
+  background: var(--blue);
 }
 
 footer img {

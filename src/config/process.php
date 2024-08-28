@@ -21,7 +21,7 @@ if (isset($_POST['cadastrar'])) {
   $celular = $_POST['celular'];
 
   $sql = "INSERT INTO dados (nome, data_nascimento, email, profissao, telefone, celular) VALUES ('$nome', '$data_nascimento', '$email', '$profissao','$telefone', '$celular')";
-  
+
   if ($conn->query($sql) === TRUE) {
       echo "Dados inseridos com sucesso!";
   } else {
