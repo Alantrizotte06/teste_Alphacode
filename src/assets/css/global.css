@@ -1,8 +1,10 @@
 :root {
   --white: #ffffff;
-  --blue: #068ED0;
+  --blue-600: #068ED0;
+  --blue-800: #1d4ed8;
   --black: #000000;
   --gray-100: #7f7f7f;
+  --gray-400: #4e5052;
   --gray-600: #2d2f31;
 }
 
@@ -14,7 +16,7 @@
 
 header {
   display: flex;
-  background: var(--blue);
+  background: var(--blue-600);
   color: var(--white);
   height: 8rem;
 }
@@ -31,65 +33,154 @@ header img {
 body {
   background-color: var(--white);
   color: var(--black);
-  -webkit-font-smoothing: antialiased; 
+  -webkit-font-smoothing: antialiased;
 }
 
-body, input, button {
+body,
+input,
+button {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 1rem;
 }
 
 .formCadastro {
-  background: var(--white);
+  display: contents;
   color: var(--gray-600);
-  padding: 2rem;
-  border-bottom: solid 2px var(--gray-100);
+  height: 35rem;
 }
 
 .dadosCadastro {
   display: inline-grid;
-  width: 49rem;
-  padding: 2rem 5rem 2rem 15rem;
+  width: 30rem;
+  margin: 5rem 0 0 20rem;
 }
 
 .dadosCadastro label {
-  color: var(--gray-600);
-  font-size: .875rem;
-  font-weight:bolder;
+  color: var(--gray-400);
+  padding-bottom: .500rem;
+  font-size: 1rem;
+  font-weight: bolder;
 }
 
-.dadosCadastro input {  
-  padding: 5px 0;
+.dadosCadastro input {
+  margin-top: 5px;
   border: none;
+  font-size: 1.100rem;
   border-bottom: 2px solid #ccc;
   outline: none;
 }
 
 .dadosCadastro input:focus {
-  border-bottom-color: var(--blue);
+  border-bottom-color: var(--blue-600);
 }
 
 .dadosCadastro:focus-within label {
-  color: var(--blue);
+  color: var(--blue-600);
 }
 
-.columnInfo {
-  background: var(--blue);
+.contentCheckbox {
+  display: flex;
+  flex-flow: row wrap;
+  width: 70%;
+  height: 10rem;
+  margin: 2rem 0 10rem 20rem;
+  border-bottom: solid 2px var(--gray-100);
+}
+
+.formCheckbox {
+  width: 35.5%;
+}
+
+.formCheckbox:nth-child(2) {
+  margin-left: 21.5rem;
+}
+
+.formCheckbox label {
+  margin-left: .750rem;
+  color: var(--gray-400);
+}
+
+.btnCadastrar {
+  position: absolute;
+  right: 0;
+  margin: 4rem 15rem 0 15rem;
+}
+
+.btnCadastrar button[type="submit"] {
+  padding: 1rem 1rem;
+  border-radius: 8px;
+  border: 0;
+  background: var(--blue-600);
+  color: var(--white);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btnCadastrar button[type="submit"]:hover {
+  background: var(--blue-800);
+}
+
+table {
+  position: relative;
+  margin: 0 0 10rem 19rem;
+  width: 70%;
+}
+
+table.dadosSalvos th,
+table.dadosSalvos td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size: 14px;
+  text-align: center;
+}
+
+table.dadosSalvos th {
+  background-color: var(--blue-600);
+  color: var(--white);
+}
+
+table.dadosSalvos tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table.dadosSalvos tr:hover {
+  background-color: #e9f7fd;
+}
+
+table.dadosSalvos td a {
+  text-decoration: none;
+  color: var(--blue-600);
+}
+
+table.dadosSalvos td a img {
+  height: 20px;
+  padding-left: 1rem;
 }
 
 footer img {
-  margin-top: .500rem;
   height: 1.5rem;
 }
 
 footer {
-  position: absolute;
+  position: relative;
+  display: flex;
   bottom: 0;
   width: 100%;
-  background: var(--blue); 
+  background: var(--blue-600);
   color: var(--white);
-  display: flex;
   height: 5rem;
-  justify-content: center;
+}
+
+footer div:nth-child(1) {
+  padding-left: 28rem;
+}
+
+footer div {
+  position: relative;
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 2rem 5rem 0 5rem;
 }
