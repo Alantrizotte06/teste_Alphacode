@@ -1,0 +1,159 @@
+:root {
+  --white: #ffffff;
+  --blue-600: #068ED0;
+  --blue-800: #1d4ed8;
+  --black: #000000;
+  --gray-100: #7f7f7f;
+  --gray-400: #4e5052;
+  --gray-600: #2d2f31;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  background: var(--blue-600);
+  color: var(--white);
+  height: 8rem;
+}
+
+header h1 {
+  margin: 3.25rem 0 0 1rem;
+  font-size: 1.25rem;
+}
+
+header img {
+  height: 8rem;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--black);
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.formEditar {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formEditar div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.formEditar div label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--gray-600);
+}
+
+.formEditar div input[type="text"],
+.formEditar div input[type="date"] {
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  width: 100%;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  color: var(--gray-400);
+}
+
+.formEditar div input:focus {
+  border-bottom-color: var(--blue-600);
+}
+
+.dadosEditar:focus-within label {
+  color: var(--blue-600);
+}
+
+.formEditar div.checkbox-group {
+  display: flex;
+  align-items: center;
+}
+
+.formEditar div.checkbox-group label {
+  margin-left: 5px;
+  font-weight: normal;
+}
+
+.formEditar .btnCadastrar button {
+  padding: 10px 20px;
+  background-color: var(--blue-600);
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btnCadastrar {
+  position: absolute;
+  right: 0;
+  margin: 4rem 15rem 0 15rem;
+}
+
+.btnCadastrar button[type="submit"] {
+  padding: 1rem 1rem;
+  border-radius: 8px;
+  border: 0;
+  background: var(--blue-600);
+  color: var(--white);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btnCadastrar button[type="submit"]:hover {
+  background: var(--blue-800);
+}
+
+.formEditar .btnCadastrar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.formEditar .btnCadastrar button:hover {
+  background-color: #0056b3;
+}
+
+footer img {
+  height: 1.5rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: var(--blue-600);
+  color: var(--white);
+  display: flex;
+  height: 5rem;
+}
+
+footer div:nth-child(1) {
+  padding-left: 28rem;
+}
+
+footer div {
+  position: relative;
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 2rem 5rem 0 5rem;
+}
