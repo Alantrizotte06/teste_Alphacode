@@ -24,7 +24,7 @@
 
     <div class="dadosCadastro">
       <label for="data_nascimento">Data de nascimento</label>
-      <input type="data" name="data_nascimento" placeholder="Ex.: 03/10/2003" required>
+      <input type="date" name="data_nascimento" placeholder="Ex.: 03/10/2003" required>
     </div>
 
     <div class="dadosCadastro">
